@@ -5,9 +5,9 @@ int main()
 {
 	std::cout << "Hello World!\n";
 
-	Account myAccount("john", "pass");
+	Account myAccount;
+	myAccount.CreateAccount();
 	myAccount.DisplayAccount();
-	std::cout << "\n";
 
 	system("pause");
 
