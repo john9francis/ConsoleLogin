@@ -127,7 +127,17 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="account.cpp" />
     <ClCompile Include="ConsoleLogin.cpp" />
+    <ClCompile Include="database.cpp" />
+    <ClCompile Include="numberAccount.cpp" />
+    <ClCompile Include="securityAccount.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="account.h" />
+    <ClInclude Include="database.h" />
+    <ClInclude Include="numberAccount.h" />
+    <ClInclude Include="securityAccount.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
