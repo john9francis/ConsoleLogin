@@ -1,7 +1,7 @@
 # Overview
 
 This is a classic "login" program that works in the console. The idea is the user can 
-create an account or login. If the user logs in, the system will check if their username
+create an account or log in. If the user logs in, the system will check if their username
 and password is in the system, and if not, it will reject them. If the user creates an
 account, it will add their new username and password to the system.
 
