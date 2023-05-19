@@ -11,9 +11,9 @@ void SecurityAccount::CreateAccount() {
 	std::string password;
 
 	std::cout << "Secure Username: ";
-	std::getline(std::cin, username);
+	std::cin >> username;
 	std::cout << "Secure Password: ";
-	std::getline(std::cin, password);
+	std::cin >> password;
 
 	// save the username and password to the account object
 

@@ -2,14 +2,7 @@
 
 #include <iostream>
 
-// we need to include any classes that we use. Specifically the cpp files.
-
-/*
-#include "account.cpp"
-#include "database.cpp"
-#include "numberAccount.cpp"
-#include "securityAccount.cpp"
-*/
+// we need to include any classes that we use.
 
 #include "database.h"
 #include "account.h"
@@ -21,7 +14,6 @@
 int main()
 {
 	// main program:
-
 	
 	Database accountDatabase;
 	accountDatabase.AddAccount();

@@ -11,9 +11,9 @@ void NumberAccount::CreateAccount() {
 	std::string password;
 
 	std::cout << "Number Username: ";
-	std::getline(std::cin, username);
-	std::cout << "Number Password: ";
-	std::getline(std::cin, password);
+	std::cin >> username;
+	std::cout << "Number Password : ";
+	std::cin >> password;
 
 	// save the username and password to the account object
 	
