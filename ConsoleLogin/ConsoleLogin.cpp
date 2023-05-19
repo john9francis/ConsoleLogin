@@ -1,5 +1,6 @@
 #include <iostream>
 #include "account.cpp"
+#include "database.cpp"
 
 int main()
 {
@@ -8,6 +9,8 @@ int main()
 	Account myAccount;
 	myAccount.CreateAccount();
 	myAccount.DisplayAccount();
+
+	Database accountDatabase;
 
 	system("pause");
 
