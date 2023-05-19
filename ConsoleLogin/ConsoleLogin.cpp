@@ -6,11 +6,10 @@ int main()
 {
 	std::cout << "Hello World!\n";
 
-	Account myAccount;
-	myAccount.CreateAccount();
-	myAccount.DisplayAccount();
-
 	Database accountDatabase;
+	accountDatabase.AddAccount();
+	accountDatabase.AddAccount();
+	accountDatabase.DisplayDatabase();
 
 	system("pause");
 

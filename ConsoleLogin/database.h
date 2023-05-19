@@ -11,8 +11,9 @@ private:
 
 public:
 	Database();
-	void AddAccount(Account account);
-	std::string GetPassword(std::string username);
+	void AddAccount();
+	void DisplayDatabase();
+	bool CheckPassword(const std::string& password);
 
 };
 

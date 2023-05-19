@@ -10,7 +10,7 @@ Account::Account(std::string username, std::string password) {
 	_password = password;
 }
 
-void Account::DisplayAccount() {
+void Account::DisplayAccount() const {
 	std::cout << _username << " " << _password;
 }
 

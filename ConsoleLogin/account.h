@@ -11,7 +11,7 @@ private:
 public:
     Account();
     Account(std::string username, std::string password);
-    void DisplayAccount();
+    void DisplayAccount() const;
     void SetUsername(std::string username);
     std::string GetUsername();
     void SetPassword(std::string password);
