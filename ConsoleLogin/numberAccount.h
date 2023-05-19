@@ -7,6 +7,7 @@ class NumberAccount : public Account {
 
 public:
 	NumberAccount();
+	virtual void CreateAccount() override;
 
 };
 

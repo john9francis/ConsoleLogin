@@ -23,9 +23,10 @@ int main()
 
 	//testing
 
-	NumberAccount n;
-	n.CreateAccount();
-	n.DisplayAccount();
+	Account* account = new NumberAccount();
+	account->CreateAccount();
+	account->DisplayAccount();
+	delete account;
 
 	// system("pause") is just makes it so the console doesn't close immediately.
 	

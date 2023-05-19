@@ -27,7 +27,7 @@ public:
     std::string GetUsername() const;
     void SetPassword(std::string password);
     std::string GetPassword() const;
-    void CreateAccount();
+    virtual void CreateAccount();
 };
 
 // this is ending the #ifndef from above.

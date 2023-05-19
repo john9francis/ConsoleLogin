@@ -31,12 +31,13 @@ std::string Account::GetPassword() const {
 }
 
 void Account::CreateAccount() {
-	
+	/*
 	std::cout << "Username: ";
 	std::cin >> _username;
 	std::cout << "Password: ";
 	std::cin >> _password;
 	std::cout << "Account successfully created. " << std::endl;
+	*/
 	
 
 	// requirements: username is not in the system, 
