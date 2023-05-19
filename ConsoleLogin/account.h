@@ -13,7 +13,6 @@ class Account {
 private:
     std::string _username;
     std::string _password;
-    bool _valid = false;
 
 public:
     Account();
@@ -28,6 +27,9 @@ public:
     void SetPassword(std::string password);
     std::string GetPassword() const;
     virtual void CreateAccount();
+
+    virtual bool CheckUsernameValidity(std::string username);
+    virtual bool CheckPasswordValidity(std::string password);
 };
 
 // this is ending the #ifndef from above.

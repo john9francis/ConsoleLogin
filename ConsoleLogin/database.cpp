@@ -50,3 +50,13 @@ void Database::DisplayDatabase() {
 	}
 }
 
+bool Database::CheckUsernameValidity(std::string username) {
+
+	for (Account a : _accountList) {
+		if (a.GetUsername() == username) {
+			return false;
+		}
+	}
+	return true;
+}
+

@@ -43,5 +43,12 @@ void Account::CreateAccount() {
 
 	this->SetUsername(username);
 	this->SetPassword(password);
-	
+}
+
+bool Account::CheckUsernameValidity(std::string username) {
+	return true;
+}
+
+bool Account::CheckPasswordValidity(std::string password) {
+	return true;
 }

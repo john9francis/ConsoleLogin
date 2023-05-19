@@ -17,9 +17,12 @@ private:
 
 public:
 	Database();
+
 	void AddAccount();
 	void DisplayDatabase();
 	bool CheckPassword(const std::string& password);
+
+	bool CheckUsernameValidity(std::string username);
 
 };
 

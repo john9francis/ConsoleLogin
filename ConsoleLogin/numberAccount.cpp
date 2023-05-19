@@ -19,5 +19,12 @@ void NumberAccount::CreateAccount() {
 	
 	this->SetUsername(username);
 	this->SetPassword(password);
+}
 
+bool NumberAccount::CheckUsernameValidity(std::string username) {
+	return true;
+}
+
+bool NumberAccount::CheckPasswordValidity(std::string password) {
+	return true;
 }

@@ -2,7 +2,8 @@
 
 #include <iostream>
 
-// we need to include any classes that we use.
+// we need to include any classes that 
+we use.
 
 #include "database.h"
 #include "account.h"
@@ -19,25 +20,6 @@ int main()
 	accountDatabase.AddAccount();
 	accountDatabase.AddAccount();
 	accountDatabase.DisplayDatabase();
-	
-
-	//testing
-	/*
-	Account* n = new NumberAccount();
-	n->CreateAccount();
-	n->DisplayAccount();
-	delete n;
-
-	Account* a = new Account();
-	a->CreateAccount();
-	a->DisplayAccount();
-	delete a;
-
-	Account* s = new SecurityAccount();
-	s->CreateAccount();
-	s->DisplayAccount();
-	delete s;
-	*/
 
 	//system("pause") is just makes it so the console doesn't close immediately.
 	

@@ -19,5 +19,12 @@ void SecurityAccount::CreateAccount() {
 
 	this->SetUsername(username);
 	this->SetPassword(password);
+}
 
+bool SecurityAccount::CheckUsernameValidity(std::string username) {
+	return true;
+}
+
+bool SecurityAccount::CheckPasswordValidity(std::string password) {
+	return true;
 }
