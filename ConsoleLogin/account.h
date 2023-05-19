@@ -13,6 +13,7 @@ class Account {
 private:
     std::string _username;
     std::string _password;
+    bool _valid = false;
 
 public:
     Account();
