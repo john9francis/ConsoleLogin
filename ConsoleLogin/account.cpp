@@ -18,7 +18,7 @@ void Account::SetUsername(std::string username){
 	_username = username;
 }
 
-std::string Account::GetUsername() {
+std::string Account::GetUsername() const {
 	return _username;
 }
 
@@ -26,7 +26,7 @@ void Account::SetPassword(std::string password) {
 	_password = password;
 }
 
-std::string Account::GetPassword() {
+std::string Account::GetPassword() const {
 	return _password;
 }
 

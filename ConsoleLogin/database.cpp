@@ -4,10 +4,11 @@
 #include <list>
 
 Database::Database() {
+
 }
 
 void Database::AddAccount() {
-	// initialize a new account
+
 	Account newAccount;
 	newAccount.CreateAccount();
 	_accountList.push_back(newAccount);
