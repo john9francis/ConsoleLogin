@@ -31,6 +31,18 @@ std::string Account::GetPassword() const {
 }
 
 void Account::CreateAccount() {
+	std::string username;
+	std::string password;
+
+	std::cout << "Username: ";
+	std::getline(std::cin, username);
+	std::cout << "Password: ";
+	std::getline(std::cin, password);
+
+	// save the username and password to the account object
+
+	this->SetUsername(username);
+	this->SetPassword(password);
 	/*
 	std::cout << "Username: ";
 	std::cin >> _username;

@@ -7,6 +7,8 @@
 #include "account.cpp"
 #include "database.cpp"
 #include "numberAccount.cpp"
+#include "securityAccount.cpp"
+
 
 // main is an int because it returns 0 if it's successful
 
@@ -23,12 +25,22 @@ int main()
 
 	//testing
 
-	Account* account = new NumberAccount();
-	account->CreateAccount();
-	account->DisplayAccount();
-	delete account;
+	Account* n = new NumberAccount();
+	n->CreateAccount();
+	n->DisplayAccount();
+	delete n;
 
-	// system("pause") is just makes it so the console doesn't close immediately.
+	Account* a = new Account();
+	a->CreateAccount();
+	a->DisplayAccount();
+	delete a;
+
+	Account* s = new SecurityAccount();
+	s->CreateAccount();
+	s->DisplayAccount();
+	delete s;
+
+	//system("pause") is just makes it so the console doesn't close immediately.
 	
 	system("pause");
 

@@ -20,5 +20,4 @@ void NumberAccount::CreateAccount() {
 	this->SetUsername(username);
 	this->SetPassword(password);
 
-	Account::CreateAccount();
 }
