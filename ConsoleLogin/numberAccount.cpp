@@ -12,12 +12,13 @@ bool NumberAccount::CheckUsernameValidity(std::string username) {
 }
 
 bool NumberAccount::CheckPasswordValidity(std::string password) {
-	try {
-		int x = std::stoi(password);
-		return true;
+	bool valid = true;
+	for (char letter : password) {
+		if (!isdigit(letter)) {
+			valid = false;
+		}
 	}
-	catch (const std::invalid_argument& e) {
-		return false;
-	}
+
+	return valid;
 	
 }
