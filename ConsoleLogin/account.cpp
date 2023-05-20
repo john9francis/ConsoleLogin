@@ -32,10 +32,19 @@ std::string Account::GetPassword() const {
 
 void Account::CreateAccount(std::string username) {
 	std::string password;
+	bool validPassword = false;
 
-	std::cout << "Password: ";
-	std::cin >> password;
+	while (!validPassword) {
+		std::cout << "Password: ";
+		std::cin >> password;
 
+		if (this->CheckPasswordValidity(password)) {
+			validPassword = true;
+		}
+		else {
+			std::cout << "Invalid password. Please try again." << std::endl;
+		}
+	}
 	// save the username and password to the account object
 
 	this->SetUsername(username);

@@ -28,14 +28,14 @@ void Database::AddAccount() {
 		_accountList.push_back(newAccount);
 	}
 	else if (accountType == "number") {
-		std::cout << "Creating an account that uses only numbers..." << std::endl;
+		std::cout << "Creating a number account. Make sure your password is only numbers." << std::endl;
 		NumberAccount newAccount;
 		std::string username = this->GetUsername();
 		newAccount.CreateAccount(username);
 		_accountList.push_back(newAccount);
 	}
 	else if (accountType == "secure") {
-		std::cout << "Creating the most secure account..." << std::endl;
+		std::cout << "Creating the most secure account. Your password must include a number and a symbol (!,@,#,$,%)" << std::endl;
 		SecurityAccount newAccount;
 		std::string username = this->GetUsername();
 		newAccount.CreateAccount(username);

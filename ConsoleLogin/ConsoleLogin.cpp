@@ -21,6 +21,7 @@ int main()
 
 		// get user input
 		std::string input;
+		system("cls");
 		std::cout << "Welcome. Please choose an option." << std::endl;
 		std::cout << "To sign in, press 1." << std::endl;
 		std::cout << "To create an account, press 2." << std::endl;
@@ -33,29 +34,35 @@ int main()
 			std::cout << "Please enter your username and password." << std::endl;
 
 			// let the user login
+
+			system("pause");
 		}
 		else if (std::stoi(input) == 2) {
 			std::cout << "Please create your account." << std::endl;
 			accountDatabase.AddAccount();
+			system("pause");
+
 		}
 		else if (std::stoi(input) == 3) {
 			std::cout << "quitting now... " << std::endl;
 			x = false;
+			system("pause");
 		}
 		else if (std::stoi(input) == 4) {
+			system("cls");
 			std::cout << "you chose the secret developer setting to ";
 			std::cout << "display all the usernames and passwords..." << std::endl;
 			accountDatabase.DisplayDatabase();
+			system("pause");
 		}
 		else {
 			std::cout << "sorry, I didn't recognize that response. ";
 			std::cout << "please input 1, 2, or 3 and press enter. " << std::endl;
+			system("pause");
 		}
 	}
 
-	//system("pause") is just makes it so the console doesn't close immediately.
 	
-	system("pause");
 
 }
 

@@ -7,7 +7,6 @@ class NumberAccount : public Account {
 
 public:
 	NumberAccount();
-	virtual void CreateAccount(std::string username) override;
 	virtual bool CheckUsernameValidity(std::string username) override;
 	virtual bool CheckPasswordValidity(std::string password) override;
 

@@ -6,18 +6,6 @@ SecurityAccount::SecurityAccount() {
 
 }
 
-void SecurityAccount::CreateAccount(std::string username) {
-	std::string password;
-
-	std::cout << "Secure Password: ";
-	std::cin >> password;
-
-	// save the username and password to the account object
-
-	this->SetUsername(username);
-	this->SetPassword(password);
-}
-
 bool SecurityAccount::CheckUsernameValidity(std::string username) {
 	return true;
 }
