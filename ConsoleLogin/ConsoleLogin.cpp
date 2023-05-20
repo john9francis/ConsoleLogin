@@ -9,6 +9,9 @@
 #include "numberAccount.h"
 #include "securityAccount.h"
 
+// initialize the other functions BEFORE the main function:
+bool Login(Database database);
+
 // main is an int because it returns 0 if it's successful
 
 int main()
@@ -34,6 +37,14 @@ int main()
 			std::cout << "Please enter your username and password." << std::endl;
 
 			// let the user login
+			if (Login(accountDatabase)) {
+				std::cout << "Logging in...";
+				x = false;
+			}
+			else {
+				std::cout << "invalid username or password. ";
+				std::cout << "Going back to main menu... " << std::endl;
+			}
 
 			system("pause");
 		}
@@ -60,12 +71,20 @@ int main()
 			std::cout << "please input 1, 2, or 3 and press enter. " << std::endl;
 			system("pause");
 		}
-	}
-
-	
+	}	
 
 }
 
 // other functions
 
+bool Login(Database database) {
+	std::string username;
+	std::string password;
 
+	std::cout << "Username: ";
+	std::cin >> username;
+	std::cout << "Password: ";
+	std::cin >> password;
+
+	return database.CheckUser(username, password);
+}

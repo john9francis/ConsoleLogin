@@ -21,9 +21,10 @@ public:
 	void AddAccount();
 	void DisplayDatabase();
 	std::string GetUsername();
-	bool CheckPassword(const std::string& password);
 
 	bool CheckUsernameValidity(std::string username);
+
+	bool CheckUser(std::string username, std::string password);
 
 };
 
