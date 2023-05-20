@@ -11,7 +11,7 @@ I wrote this software to teach myself C++. This project demonstrates the followi
 * Inheritance
 * virtual and override functions
 
-[Software Demo Video]([http://youtube.link.goes.here](https://youtu.be/zT-EGHE2-Nc))
+[Software Demo Video](https://youtu.be/zT-EGHE2-Nc)
 
 # Development Environment
 
