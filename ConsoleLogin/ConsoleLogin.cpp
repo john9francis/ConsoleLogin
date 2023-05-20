@@ -24,7 +24,7 @@ int main()
 
 		// get user input
 		std::string input;
-		system("cls");
+		system("cls"); // this clears the console
 		std::cout << "Welcome. Please choose an option." << std::endl;
 		std::cout << "To sign in, press 1." << std::endl;
 		std::cout << "To create an account, press 2." << std::endl;

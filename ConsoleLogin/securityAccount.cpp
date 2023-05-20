@@ -43,6 +43,3 @@ bool SecurityAccount::CheckPasswordValidity(std::string username) {
 	return false;
 }
 
-bool SecurityAccount::CheckUsernameValidity(std::string password) {
-	return true;
-}

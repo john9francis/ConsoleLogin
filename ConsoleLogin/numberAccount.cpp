@@ -6,10 +6,6 @@ NumberAccount::NumberAccount() {
 
 }
 
-bool NumberAccount::CheckUsernameValidity(std::string username) {
-	
-	return true;
-}
 
 bool NumberAccount::CheckPasswordValidity(std::string password) {
 	bool valid = true;
