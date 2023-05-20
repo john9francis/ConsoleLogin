@@ -20,6 +20,7 @@ public:
 
 	void AddAccount();
 	void DisplayDatabase();
+	std::string GetUsername();
 	bool CheckPassword(const std::string& password);
 
 	bool CheckUsernameValidity(std::string username);

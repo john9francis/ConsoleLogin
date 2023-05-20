@@ -23,19 +23,22 @@ void Database::AddAccount() {
 	if (accountType == "normal") {
 		std::cout << "Creating a normal account..." << std::endl;
 		Account newAccount;
-		newAccount.CreateAccount();
+		std::string username = this->GetUsername();
+		newAccount.CreateAccount(username);
 		_accountList.push_back(newAccount);
 	}
 	else if (accountType == "number") {
 		std::cout << "Creating an account that uses only numbers..." << std::endl;
 		NumberAccount newAccount;
-		newAccount.CreateAccount();
+		std::string username = this->GetUsername();
+		newAccount.CreateAccount(username);
 		_accountList.push_back(newAccount);
 	}
 	else if (accountType == "secure") {
 		std::cout << "Creating the most secure account..." << std::endl;
 		SecurityAccount newAccount;
-		newAccount.CreateAccount();
+		std::string username = this->GetUsername();
+		newAccount.CreateAccount(username);
 		_accountList.push_back(newAccount);
 	}
 	else {
@@ -48,6 +51,25 @@ void Database::DisplayDatabase() {
 	for (const Account& account : _accountList) {
 		account.DisplayAccount();
 	}
+}
+
+std::string Database::GetUsername() {
+	std::string username;
+	bool valid = false;
+
+	while (!valid) {
+
+		std::cout << "Enter Username: ";
+		std::cin >> username;
+		if (this->CheckUsernameValidity(username)) {
+			valid = true;
+		}
+		else {
+			std::cout << "Sorry, this username is already in the system. "; 
+			std::cout << "Please enter a different username." << std::endl;
+		}
+	}
+	return username;
 }
 
 bool Database::CheckUsernameValidity(std::string username) {

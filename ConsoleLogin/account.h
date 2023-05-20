@@ -26,7 +26,7 @@ public:
     std::string GetUsername() const;
     void SetPassword(std::string password);
     std::string GetPassword() const;
-    virtual void CreateAccount();
+    virtual void CreateAccount(std::string username);
 
     virtual bool CheckUsernameValidity(std::string username);
     virtual bool CheckPasswordValidity(std::string password);

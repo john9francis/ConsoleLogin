@@ -6,12 +6,9 @@ NumberAccount::NumberAccount() {
 
 }
 
-void NumberAccount::CreateAccount() {
-	std::string username;
+void NumberAccount::CreateAccount(std::string username) {
 	std::string password;
 
-	std::cout << "Number Username: ";
-	std::cin >> username;
 	std::cout << "Number Password : ";
 	std::cin >> password;
 

@@ -6,12 +6,9 @@ SecurityAccount::SecurityAccount() {
 
 }
 
-void SecurityAccount::CreateAccount() {
-	std::string username;
+void SecurityAccount::CreateAccount(std::string username) {
 	std::string password;
 
-	std::cout << "Secure Username: ";
-	std::cin >> username;
 	std::cout << "Secure Password: ";
 	std::cin >> password;
 
