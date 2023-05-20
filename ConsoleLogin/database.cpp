@@ -83,6 +83,9 @@ bool Database::CheckUsernameValidity(std::string username) {
 }
 
 bool Database::CheckUser(std::string username, std::string password) {
+
+	// checks if a user is in the database
+
 	for (Account account : _accountList) {
 		if (account.GetUsername() == username) {
 			if (account.GetPassword() == password) {

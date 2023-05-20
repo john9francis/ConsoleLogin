@@ -33,10 +33,13 @@ int main()
 
 		// do what the user wants
 		// note: stoi() is like int.Parse()
+
 		if (std::stoi(input) == 1) {
+
+			// 1 = Login
+
 			std::cout << "Please enter your username and password." << std::endl;
 
-			// let the user login
 			if (Login(accountDatabase)) {
 				std::cout << "Logging in...";
 				x = false;
@@ -49,17 +52,26 @@ int main()
 			system("pause");
 		}
 		else if (std::stoi(input) == 2) {
+
+			// 2 = create account
+
 			std::cout << "Please create your account." << std::endl;
 			accountDatabase.AddAccount();
 			system("pause");
 
 		}
 		else if (std::stoi(input) == 3) {
+
+			// 3 = quit
+
 			std::cout << "quitting now... " << std::endl;
 			x = false;
 			system("pause");
 		}
 		else if (std::stoi(input) == 4) {
+
+			// 4 = display all usernames and passwords (secret method)
+
 			system("cls");
 			std::cout << "you chose the secret developer setting to ";
 			std::cout << "display all the usernames and passwords..." << std::endl;
@@ -67,6 +79,9 @@ int main()
 			system("pause");
 		}
 		else {
+
+			// any other input = unknown
+
 			std::cout << "sorry, I didn't recognize that response. ";
 			std::cout << "please input 1, 2, or 3 and press enter. " << std::endl;
 			system("pause");
